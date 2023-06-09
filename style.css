@@ -1,0 +1,263 @@
+ /* CSS RESETS */
+*{
+margin: 0;
+padding: 0;
+}
+/* NAVBAR */
+#navbar{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: #989ada;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+#navbar ul{
+    display: flex;
+    
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a{
+    text-decoration: none;
+    display: block;
+    color: #000;
+    margin: 13px ;
+    padding: 15px 17px;
+    letter-spacing: 4px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+#navbar ul li a:hover{
+    background-color: rgb(229, 241, 241);
+    color: black;
+
+}
+#nav-heading{
+    margin-right: 9px;
+}
+/* HOME */
+#home{
+    background:url(./architect.jpg) no-repeat center center/cover;
+    height: 683px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+#bold{
+    background-color: #000;
+    padding: 20px;
+    opacity: 0.75;
+    margin-right: 12px;
+}
+#home h1{
+    position: absolute;
+    left: 630px;
+    top: 400px;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fffefe;
+}
+/* PROJECTS */
+.project-heading {
+    margin: 0 50px;
+}
+.project-heading h3{
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    padding: 16px 0;
+}
+#project{
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+}
+#project .box-1 img{
+    width: 100%;
+}
+
+
+#project .box-1 {
+    margin: 3px 3px;
+}
+#project .box-1 .box-heading-1{
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    z-index: 1;
+    background-color: #3f336e;
+    color: #dfd4d1;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#project .box-1 .box-heading-2{
+    position: absolute;
+    top: 2px;
+    left: 359px;
+    z-index: 1;
+    background-color: #3f336e;
+    color: #dfd4d1;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#project .box-1 .box-heading-3{
+    position: absolute;
+    top: 2px;
+    right: 607px;
+    z-index: 1;
+    background-color: #3f336e;
+    color: #dfd4d1;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#project .box-1 .box-heading-4{
+    position: absolute;
+    top: 2px;
+    right: 234px;
+    z-index: 1;
+    background-color: #3f336e;
+    color: #dfd4d1;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.about-heading{
+    margin-top: 90px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.about-heading h3{
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    padding: 16px 0;
+}
+.about-information{
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 60px;
+
+}
+#about{
+    display: flex;
+    margin-bottom: 100px;
+}
+#about .box-1 img{
+width: 100%;
+}
+#about .box-1 {
+    margin: 5px;
+    }
+.about-member{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: 400;
+margin: 8px 0;
+font-size: 28px;
+}
+.about-work{
+    opacity: 0.6;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.about-para{
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px 0;
+}
+
+
+/* CONTACT */
+.contact-heading {
+margin: 0 50px;
+}
+.contact-heading h3{
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    padding: 16px 0;
+}
+
+.contact-para{
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px 0;
+}
+#contact-box{
+    margin-bottom: 15px;
+}
+#contact-box input,
+#contact-box textarea{
+width: 100%;
+padding: 10px;
+font-size: 20px;
+}
+#contact-box label{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.img-map{
+    width: 100%;
+    margin-bottom: 20px;
+}
+/* FOOTER */
+.footer{
+    background-color: #000;
+    color: #e9dede;
+    padding: 50px 500px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* BORDER */
+.border-1{
+    border-bottom: solid #be3d3d 1px;
+    margin-bottom: 50px;
+}
+.border-2{
+    border-bottom: solid #be3d3d 1px;
+}
+/* BUTTON */
+.btn{
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #be3d3d;
+    color: #e9dede;
+    width: 100%;
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+.btn-1{
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #be3d3d;
+    color: #e9dede;
+    padding: 15px 35px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.btn-1:hover{
+    background-color: #989ada;
+    color:#fff ;
+}
